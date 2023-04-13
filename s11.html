@@ -142,5 +142,44 @@
     }
 
     const reslult = arr.map(callback);
-    console.log(reslult);
+    // console.log(reslult);
+
+    // 객체
+    var obj = {
+        key1 : "value1",
+        key2() {
+            this.key1;
+        },
+        key3 : {
+            subKey1 : "subValue1"
+        }
+    };
+    // null일 경우 확인하는 것
+    obj?.key3?.subKey1;
+
+    // Date
+    // console.log(`Date.now():${Date.now()}`)
+    const myDate = new Date();
+    const tempDate = new Date('2023-01-01T12:00:00.000z');
+    // console.log(myDate);
+    // console.log(tempDate);
+
+    // console.log(`myDate.getFullYear() : ${myDate.getFullYear()}`);
+    // console.log(`myDate.getMonth() : ${myDate.getMonth()}`);
+    // console.log(`myDate.getDate() : ${myDate.getDate()}`);
+    // console.log(`myDate.getDay() : ${myDate.getDay()}`);
+    // // 국제 표준시
+    // console.log(`myDate.toJSON() : ${myDate.toJSON()}`);
+    // console.log(`myDate.toJSON() : ${myDate.toJSON()}`);
+    // myDate.get;.... 1970.1.1  기준
+
+    // navigator
+    // window       // html 파일 최상단
+    // window.document.getElementById(""); == document.getElementById();
+    // window.location.href = ""; ==     location.href = "";
+
+    const a = 1;
+    b = 1;      // 최상단에 할당, 현 페이지에서만 활용(새로고침, 페이지 이동시 초기화), window.b = 1;
+    console.log(window.a);
+    console.log(window.b); 
 </script>
